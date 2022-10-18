@@ -1,0 +1,19 @@
+{
+  "name": "Deta Event Queue",
+  "description": "Simple, reliable and free Event Queue Api.",
+  "runtime": "python3.9",
+  "env": [
+    {
+      "key": "QUEUE_NAME",
+      "description": "This is the name of your queue. You can deploy as many as you want with just changing queue name.",
+      "value": "MyQueue",
+      "required": true
+    },
+        {
+      "key": "PASSWORD",
+      "description": "This password is needed when using the api.",
+      "value": "7207a43b",
+      "required": true
+    }
+  ]
+}
