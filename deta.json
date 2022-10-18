@@ -15,5 +15,6 @@
       "value": "7207a43b",
       "required": true
     }
-  ]
+  ],
+  "cron": "1 minute"
 }
