@@ -161,6 +161,7 @@ def execute_event(event):
                                       allow_redirects=False)
         if (event_response.status_code < 300):
             event_queue_db.delete(event['key'])
+            event['status']="success"
             event['request_response_status_code'] = event_response.status_code
             event['request_response_body'] = event_response.text
             event['request_response_headers'] = dict(event_response.headers)
