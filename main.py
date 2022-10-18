@@ -150,8 +150,8 @@ def get_count_of_evets_in_queue(max_count_of_fetch_requests: int = Query(10, le=
 def execute_event(event):
     if (event['try_count'] >= event['max_try_count']):
         event_queue_db.delete(event['key'])
-        event['status'] = "max_try_count_reached"  # todo bunuda düzgün yap
-        finished_event_queue_db.put(event)
+        event['status'] = "max_try_count_reached"
+        finished_event_queue_db.put(event, expire_in=(24 * 60 * 60))
         return
     event['try_count'] += 1
     event_queue_db.put(event)
