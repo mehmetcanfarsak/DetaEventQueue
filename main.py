@@ -115,7 +115,7 @@ def receive_event(event: ReceiveEventModel, password: str = Query("demo")):
 
 
 @app.get("/get-event", response_model=EventModel, tags=["Get Details of Event"])
-def get_event(event_key: str = Query("Key of event which is returned in ")):
+def get_event(event_key: str = Query(description="Key of event which is returned in ")):
     event = event_queue_db.get(event_key)
     if (event == None):
         finished_event = finished_event_queue_db.get(event_key)
