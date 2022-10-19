@@ -71,6 +71,9 @@
 
 > **_ReDoc:_** [https://DetaEventQueue.deta.dev/redoc](https://DetaEventQueue.deta.dev/redoc "https://DetaEventQueue.deta.dev/redoc")
 
+## 💁 **Example Projects** Using with Deta Event Queue :
+* [https://FormToEmailService.deta.dev](https://FormToEmailService.deta.dev)
+* [https://github.com/mehmetcanfarsak/FormToEmailService](https://github.com/mehmetcanfarsak/FormToEmailService)
 
 ## Contributing  
 
